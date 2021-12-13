@@ -156,8 +156,14 @@ export const FAQList = {
           mint.
           <br />
           <br />
-          The original 100 (Gen 1) can be found on Hic Et Nunc, on the Tezos
-          Blockchain.
+          The original 100 (Gen 1) can be found on the{" "}
+          <a
+            href="https://hic.af/ghostcat"
+            style={{ color: "#66bcd7", textDecoration: "none" }}
+          >
+            Tezos Blockchain
+          </a>
+          .
         </p>
       ),
     },
