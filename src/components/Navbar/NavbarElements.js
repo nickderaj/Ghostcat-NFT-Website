@@ -15,11 +15,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  transition: 1s all ease-in-out;
-
-  /* @media screen and (max-width: 960px) {
-    transition: 0.3s all ease-in-out;
-  } */
+  /* transition: opacity 1s; */
 `;
 
 export const NavContainer = styled.div`
