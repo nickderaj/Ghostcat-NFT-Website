@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ primary }) => (primary ? "#f9f9f9" : "#010606")};
+  margin-top: ${({ hero }) => (hero ? "8rem" : 0)};
 
   @media screen and (max-width: 768px) {
-    margin-top: ${({ hero }) => (hero ? "10rem" : "5rem")};
+    margin-top: ${({ hero }) => (hero ? "4rem" : 0)};
     padding-top: 5rem;
     padding-bottom: ${({ small }) => (small ? "15rem" : "10rem")};
   }
@@ -123,7 +124,7 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: ${({ small }) => (small ? "80%" : "100%")};
+  width: ${({ small }) => (small ? "80%" : "90%")};
   border-radius: ${({ imgBorder }) => (imgBorder ? "5rem" : "0rem")};
   color: black;
   border-width: 0.7rem;

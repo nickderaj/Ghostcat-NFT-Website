@@ -62,6 +62,7 @@ export const aboutInfo = {
   alt: "Ghost Cat Preview",
   imgBorder: true,
   short: false,
+  hero: true,
 };
 export const mintInfo = {
   id: "mint",
