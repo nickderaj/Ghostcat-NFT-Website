@@ -48,7 +48,12 @@ const Info = (p) => {
   };
 
   return (
-    <InfoContainer primary={p.primary} id={p.id} small={p.imgSmall}>
+    <InfoContainer
+      primary={p.primary}
+      id={p.id}
+      small={p.imgSmall}
+      hero={p.hero}
+    >
       <InfoWrapper short={p.short}>
         <InfoRow imgStart={p.imgStart}>
           <Column1>
@@ -66,6 +71,7 @@ const Info = (p) => {
                 src={p.img}
                 alt={p.alt}
                 small={p.imgSmall}
+                imgBorder={p.imgBorder}
               />
             </ImgWrap>
           </Column2>

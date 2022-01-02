@@ -93,17 +93,23 @@ export const Button = styled.button`
 
 export const ButtonText = styled.div`
   margin: 1rem 0rem;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const Paragraph = styled.span`
   font-size: 1.8rem;
   line-height: 2.4rem;
-  display: none;
+  display: block;
+  max-height: 0;
+  overflow: hidden;
   color: ${({ primary }) => (primary ? "#010606" : "#fff")};
+  transition: all 0.3s cubic-bezier(0, 1, 0, 1);
 
   &.active {
-    display: block;
+    height: auto;
+    max-height: 100rem;
+    transition: all 0.3s cubic-bezier(1, 0, 1, 0);
   }
 
   @media screen and (max-width: 480px) {

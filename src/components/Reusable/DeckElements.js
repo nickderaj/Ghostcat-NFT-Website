@@ -10,11 +10,11 @@ export const DeckContainer = styled.div`
   background: ${({ primary }) => (primary ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
-    height: 90rem;
+    max-height: 90rem;
   }
 
   @media screen and (max-width: 480px) {
-    height: 110rem;
+    max-height: 110rem;
   }
 `;
 

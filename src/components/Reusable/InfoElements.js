@@ -5,6 +5,7 @@ export const InfoContainer = styled.div`
   background: ${({ primary }) => (primary ? "#f9f9f9" : "#010606")};
 
   @media screen and (max-width: 768px) {
+    margin-top: ${({ hero }) => (hero ? "10rem" : "5rem")};
     padding-top: 5rem;
     padding-bottom: ${({ small }) => (small ? "15rem" : "10rem")};
   }
@@ -13,7 +14,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: ${({ short }) => (short ? "45rem" : "66rem")};
+  max-height: ${({ short }) => (short ? "45rem" : "60rem")};
   margin-top: ${({ short }) => (short ? "5rem" : 0)};
   width: 100%;
   max-width: 110rem;
@@ -23,7 +24,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    height: ${({ short }) => (short ? "55rem" : "66rem")};
+    max-height: ${({ short }) => (short ? "55rem" : "66rem")};
   }
 `;
 
@@ -123,7 +124,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: ${({ small }) => (small ? "80%" : "100%")};
-  border-radius: ${({ small }) => (small ? "5rem" : "0rem")};
+  border-radius: ${({ imgBorder }) => (imgBorder ? "5rem" : "0rem")};
   color: black;
   border-width: 0.7rem;
   border-style: solid;

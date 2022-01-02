@@ -60,8 +60,8 @@ export const aboutInfo = {
   imgStart: false,
   img: require("../../images/1-about.jpeg").default,
   alt: "Ghost Cat Preview",
-  imgSmall: true,
-  short: true,
+  imgBorder: true,
+  short: false,
 };
 export const mintInfo = {
   id: "mint",
@@ -85,6 +85,7 @@ export const mintInfo = {
   alt: "Mint",
   noButton: false,
   imgSmall: true,
+  imgBorder: true,
   btnDisabled: true,
 };
 
@@ -208,4 +209,5 @@ export const FAQList = {
   img: require("../../images/4-faqs.svg").default,
   alt: "FAQs",
   imgSmall: true,
+  imgBorder: true,
 };
