@@ -1,1 +1,1 @@
-export const navLinks = ["Mint", "Roadmap", "FAQs", "Team"];
+export const navLinks = ["Mint", "Roadmap", "FAQs", "Team", "Gen 1"];

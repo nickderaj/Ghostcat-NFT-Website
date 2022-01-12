@@ -15,6 +15,7 @@ import {
   FAQList,
   teamDeck,
   previewGrid,
+  gen1Info,
 } from "../components/Reusable/_Data.js";
 
 const Home = () => {
@@ -47,6 +48,7 @@ const Home = () => {
       <List {...roadmapList} />
       <ToggleList {...FAQList} />
       <Deck {...teamDeck} />
+      <Info {...gen1Info} />
       <Footer />
     </>
   );

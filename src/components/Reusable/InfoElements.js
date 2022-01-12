@@ -15,7 +15,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  max-height: ${({ short }) => (short ? "45rem" : "60rem")};
+  min-height: ${({ short }) => (short ? "45rem" : "60rem")};
   margin-top: ${({ short }) => (short ? "5rem" : 0)};
   width: 100%;
   max-width: 110rem;
@@ -25,7 +25,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    max-height: ${({ short }) => (short ? "55rem" : "66rem")};
+    min-height: ${({ short }) => (short ? "55rem" : "66rem")};
   }
 `;
 

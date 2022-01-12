@@ -12,7 +12,7 @@ export const TextContainer = styled.div`
 export const TextWrapper = styled.div`
   display: flex;
   z-index: 1;
-  max-height: 66rem;
+  min-height: 66rem;
   width: 100%;
   max-width: 110rem;
   margin-right: auto;
@@ -22,7 +22,7 @@ export const TextWrapper = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    max-height: 80rem;
+    min-height: 80rem;
   }
 `;
 
@@ -87,7 +87,7 @@ export const Heading = styled.h1`
 export const ListWrapper = styled.span`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 9fr;
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: ${({ primary }) => (primary ? "#010606" : "#fff")};

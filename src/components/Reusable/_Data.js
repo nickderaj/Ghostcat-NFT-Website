@@ -8,11 +8,11 @@ export const teamDeck = {
   subheading:
     "Ghost Cat was created by two brothers with a passion for art, crypto & all things floof",
   buttonLabel: "N/A",
-  img_1: require("../../images/team-nick.jpeg").default,
+  img_1: require("../../images/team-nick.png").default,
   title_1: "Nick",
   alt_1: "Nick The Cat",
   text_1: "Had too much Catnip, forever taking a nap",
-  img_2: require("../../images/team-alex.jpeg").default,
+  img_2: require("../../images/team-alex.png").default,
   title_2: "Alex",
   alt_2: "Alex The Cat",
   text_2: "#1 Red Mage on Final Fantasy Online",
@@ -23,14 +23,14 @@ export const teamDeck = {
 export const previewGrid = {
   id: "gallery",
   primary: true,
-  img_1: require("../../images/gallery-1.jpeg").default,
-  img_2: require("../../images/gallery-2.JPG").default,
-  img_3: require("../../images/gallery-3.jpeg").default,
-  img_4: require("../../images/gallery-4.jpeg").default,
-  img_5: require("../../images/gallery-5.jpeg").default,
-  img_6: require("../../images/gallery-6.jpeg").default,
-  img_7: require("../../images/gallery-7.jpeg").default,
-  img_8: require("../../images/gallery-8.jpeg").default,
+  img_1: require("../../images/gallery-1.png").default,
+  img_2: require("../../images/gallery-2.png").default,
+  img_3: require("../../images/gallery-3.png").default,
+  img_4: require("../../images/gallery-4.png").default,
+  img_5: require("../../images/gallery-5.png").default,
+  img_6: require("../../images/gallery-6.png").default,
+  img_7: require("../../images/gallery-7.png").default,
+  img_8: require("../../images/gallery-8.png").default,
 };
 
 ////////// INFO //////////
@@ -79,7 +79,7 @@ export const mintInfo = {
       Signing the adoption papers will be <b>0.06 ETH</b> furever!
     </p>
   ),
-  buttonLabel: <i>Minting will be available in 2022</i>,
+  buttonLabel: <i>Minting will be available soon</i>,
   buttonLink: "/mint",
   imgStart: true,
   img: require("../../images/2-mint.gif").default,
@@ -89,7 +89,37 @@ export const mintInfo = {
   imgBorder: true,
   btnDisabled: true,
 };
-
+export const gen1Info = {
+  id: "gen 1",
+  primary: true,
+  topLine: "Gen 1",
+  heading: "We haven't forgotten the OGs",
+  description: (
+    <p>
+      Holders of the{" "}
+      <a
+        href="https://hic.af/ghostcat"
+        style={{ color: "#66bcd7", textDecoration: "none" }}
+      >
+        Original 100
+      </a>{" "}
+      will receive exclusive rewards as we reach certain milestones in Gen 2.
+      <br />
+      <br />
+      We plan to make interactions between Gen 1 & Gen 2 possible when we
+      release our Ghost Cat World, so don't forget about these guys!
+    </p>
+  ),
+  buttonLabel: <i>Minting will be available soon</i>,
+  buttonLink: "/",
+  imgStart: true,
+  img: require("../../images/OG Cat.gif").default,
+  alt: "Mint",
+  noButton: true,
+  imgSmall: true,
+  imgBorder: true,
+  btnDisabled: true,
+};
 ////////// LIST //////////
 
 export const roadmapList = {
@@ -97,46 +127,50 @@ export const roadmapList = {
   primary: false,
   topLine: "Roadmap",
   heading: "The Long Road Ahead Of Us",
-  img: require("../../images/gallery-7.jpeg").default,
+  img: require("../../images/gallery-7.png").default,
   imgStart: false,
   list: [
     {
-      title: "1%",
+      title: "⦾",
       description: (
         <p>
           Every 100 Ghost Cats adopted, we giveaway <b>1 ETH</b> to a random Cat
-          Owner & donate <b>1 ETH</b> to a shelter.
+          Owner & donate <b>1 ETH</b> to a shelter, and every 1000 this bumps up
+          to <b>3 ETH.</b>
         </p>
       ),
     },
     {
-      title: "10%",
+      title: "⦾",
       description: (
         <p>
-          Giveaway <b>3 ETH</b> & donate <b>3 ETH</b> to a shelter. This will
-          continue every 10% of Ghost Cats adopted (1000, 2000, ...)
-        </p>
-      ),
-    },
-    {
-      title: "25%",
-      description: (
-        <p>
-          Games held for anyone holding a Ghost Cat with <b>big prizes</b>{" "}
+          Games: Held for anyone holding a Ghost Cat with <b>big prizes</b>{" "}
           involved.
         </p>
       ),
     },
     {
-      title: "50%",
-      description: <p>Airdrop 10 Ghost Cats to 10 lucky HODLers.</p>,
+      title: "⦾",
+      description: (
+        <p>Airdrops: Will occur continuously - stay tuned on Discord!</p>
+      ),
     },
     {
-      title: "75%",
-      description: <p>TBD</p>,
+      title: "⦾",
+      description: (
+        <p>Cat Scratch Post: for Ghost Cat holders to create masterpieces.</p>
+      ),
     },
-    { title: "90%", description: <p>TBD</p> },
-    { title: "100%", description: <p>TBD</p> },
+    {
+      title: "⦾",
+      description: (
+        <p>
+          Ultimately you'll be able to look after your adopted Ghost Cats -
+          feed, groom, explore (think Neopets) with them in a multiplayer world.
+          After the project is released we will begin working on this ASAP!
+        </p>
+      ),
+    },
   ],
 };
 
@@ -185,8 +219,8 @@ export const FAQList = {
           beach!
           <br />
           <br />
-          With more sales, we'll be able to reach out to more shelters around
-          the world.
+          With more sales, we'll be able to reach out to more shelters and
+          others in need all around the world.
         </p>
       ),
     },
@@ -201,13 +235,32 @@ export const FAQList = {
           <br />
           <br />
           This will cause some attributes to be rarer than others, and as more
-          and more Cats are sold, the % will change automatically on OpenSea.
+          and more Cats are sold, the % will change automatically, however we
+          suggest you just buy the ones you like and have fun!
+        </p>
+      ),
+    },
+    {
+      title: <p>How will the Airdrops work?</p>,
+      description: (
+        <p>
+          Periodically we'll release Ghost Cats to members in the community.
+          Some examples are giveaways to current holders, most invites on
+          Discord, playing games with the community and more.
+          <br />
+          <br /> Join the{" "}
+          <a
+            href="http://discord.gg/BtvMy8AjU7"
+            style={{ color: "#66bcd7", textDecoration: "none" }}
+          >
+            Discord
+          </a>{" "}
+          channel and look out for any announcements!
         </p>
       ),
     },
   ],
   alignLeft: true,
-  img: require("../../images/4-faqs.svg").default,
   alt: "FAQs",
   imgSmall: true,
   imgBorder: true,

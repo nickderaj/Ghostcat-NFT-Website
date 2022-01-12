@@ -16,7 +16,7 @@ export const GridWrapper = styled.div`
   padding: 1.6rem;
   grid-gap: 1.6rem;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;
@@ -25,6 +25,11 @@ export const GridElement = styled.figure`
   overflow: hidden;
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 768px) {
+    &:nth-child(n + 5) {
+      display: none;
+    }
+  }
 `;
 
 export const GridImg = styled.img`
