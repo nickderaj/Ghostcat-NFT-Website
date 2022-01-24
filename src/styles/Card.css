@@ -1,0 +1,57 @@
+.card-container {
+  margin: 0 auto;
+  max-width: 40rem;
+  margin: 2rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem rgb(233, 233, 233);
+  min-height: 50rem;
+  background-color: #f7f8fa;
+}
+
+.card-text-container {
+  margin: 0 1rem;
+  min-height: 12rem;
+}
+
+.card-image-container {
+  max-width: 40rem;
+
+  background-color: #f5dcff;
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 0.4rem solid #010606;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-title,
+.card-body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.card-title {
+  font-size: 3rem;
+}
+.card-body {
+  line-height: 2.4rem;
+  font-family: 'Patrick Hand';
+  font-size: 2rem;
+}
+.card-button {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 880px) {
+  .card-image-container {
+    max-width: 40rem;
+  }
+}

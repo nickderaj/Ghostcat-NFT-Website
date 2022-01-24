@@ -1,0 +1,5 @@
+.divider {
+  margin: 0 auto;
+  border-bottom: 0.2rem solid rgb(233, 233, 233);
+  width: 60vw;
+}

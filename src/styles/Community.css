@@ -1,0 +1,101 @@
+.community-title {
+  color: #010606;
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 0.4rem 0.4rem #f5dcff;
+  line-height: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+.community-wrapper {
+  display: grid;
+  padding: 2rem 4rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.collab-wrapper {
+  padding: 0 4rem;
+  display: flex;
+}
+
+.poster-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.community-poster {
+  width: 80%;
+  border-radius: 2rem;
+  border: 0.3rem solid #010606;
+}
+
+.community-left {
+  margin: auto;
+}
+
+.poster-text {
+  font-family: 'Patrick Hand';
+  margin-top: 0;
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 2.8rem;
+}
+
+.poster-text a {
+  color: #66bcd7;
+  text-decoration: none;
+}
+
+.collab-image-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.8rem;
+}
+
+.collab-image {
+  background-color: #f5dcff;
+  width: 100%;
+  border-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
+  border: 0.3rem solid #010606;
+}
+
+.collab-image:hover {
+  transform: scale(1.1);
+}
+
+.community-paragraph {
+  font-family: 'Patrick Hand';
+  margin: 0;
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 2.8rem;
+  padding: 1rem 10vw 0 10vw;
+}
+
+@media only screen and (max-width: 890px) {
+  .community-wrapper {
+    display: grid;
+    padding: 2rem 2rem;
+  }
+  .community-poster {
+    width: 90%;
+    border-radius: 2rem;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .community-wrapper {
+    display: grid;
+    padding: 2rem 4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .collab-wrapper {
+    padding: 0rem;
+    display: flex;
+  }
+}

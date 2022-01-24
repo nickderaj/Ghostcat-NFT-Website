@@ -1,0 +1,22 @@
+.landing-header {
+  color: #010606;
+  margin: 0;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 0.4rem 0.4rem #f5dcff;
+  line-height: 5rem;
+}
+
+.landing-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /* grid-gap: 2rem; */
+}
+
+@media only screen and (max-width: 670px) {
+  .landing-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

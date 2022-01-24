@@ -1,0 +1,27 @@
+.loading-wrapper {
+  display: table-cell;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.loading-cat {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  margin: auto;
+}
+
+.loading-cat img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.loading-cat p {
+  position: relative;
+  bottom: 2.5rem;
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+}

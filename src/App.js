@@ -1,30 +1,33 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { connectWalletHandler } from './store/ethSlice';
+import LoadingCat from './pages/LoadingCat';
 
-import Home from './pages/Home.js';
-const Mint = React.lazy(() => import('./pages/Mint.js'));
-const NotFound = React.lazy(() => import('./pages/NotFound.js'));
+const Landing = React.lazy(() => import('./pages/Landing'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+const About = React.lazy(() => import('./pages/About'));
 
-function App() {
-  const ghostCat = require('./images/OG Cat.gif').default;
+const App = () => {
+  const dispatch = useDispatch();
+
+  if (window.ethereum) {
+    window.ethereum.on('accountsChanged', () => dispatch(connectWalletHandler()));
+    window.ethereum.on('chainChanged', () => {
+      window.location.reload();
+    });
+  }
+
   return (
-    <Suspense
-      fallback={
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img src={ghostCat} alt={'Ghost Cat'} />
-        </div>
-      }
-    >
-      <Router>
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/mint" component={NotFound} exact />
-          <Route path="/supersecretcatclub" component={Mint} exact />
-          <Route path="*" component={NotFound} />
-        </Switch>
-      </Router>
+    <Suspense fallback={<LoadingCat />}>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/test" element={<LoadingCat />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Suspense>
   );
-}
+};
 
 export default App;

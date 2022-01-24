@@ -1,0 +1,61 @@
+.not-found-wrapper {
+  display: table-cell;
+  width: 100vw;
+  height: 100vh;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.not-found-cat {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  margin: auto;
+}
+
+.not-found-cat img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.not-found-cat p {
+  max-width: 100vw;
+  position: relative;
+  bottom: 2.5rem;
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.animated {
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}

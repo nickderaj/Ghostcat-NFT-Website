@@ -1,0 +1,46 @@
+.tc-container {
+  margin: auto;
+  display: block;
+  max-width: 80rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  /* box-shadow: 0.5rem 0.5rem rgb(233, 233, 233); */
+  background-color: #f7f8fa;
+}
+
+.tc-title {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.tc-paragraph p {
+  padding: 0;
+  margin: 0.5rem 0;
+  line-height: 2.4rem;
+  line-height: 3rem;
+  font-size: 3rem;
+}
+
+.tc-paragraph a {
+  text-decoration: none;
+  color: #66bcd7;
+}
+
+@media only screen and (max-width: 670px) {
+  .tc-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .tc-title {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .tc-paragraph {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 2.4rem;
+  }
+}

@@ -1,18 +1,20 @@
 import React from 'react';
+import Button from '../components/Button';
 
-const UnderConstruction = () => {
-  const ghostCat = require('../images/OG Cat.gif').default;
+import logo from '../images/Kitten.png';
+import Colours from '../styles/Colours';
+import '../styles/NotFound.css';
 
+const NotFound = () => {
   return (
-    <div style={{ background: '#f5dcff', width: '100vw', height: '100vh' }}>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <img src={ghostCat} alt={'Ghost Cat'} />
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <h2 style={{ fontSize: '5rem' }}>Page Not Found</h2>
+    <div className="not-found-wrapper" style={{ backgroundColor: Colours.white }}>
+      <div className="not-found-cat">
+        <img src={logo} alt="Page Not Found" className="animated bounce" />
+        <p>Page Not Found</p>
+        <Button location="/" text="Back" />
       </div>
     </div>
   );
 };
 
-export default UnderConstruction;
+export default NotFound;
