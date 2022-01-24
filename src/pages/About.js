@@ -9,6 +9,7 @@ import TextContainer from '../components/TextContainer';
 import ImageContainer from '../components/ImageContainer';
 import adoptCat from '../images/main/adoptme.jpg';
 import Divider from '../components/Divider';
+import Gallery from '../components/Gallery';
 
 const About = () => {
   return (
@@ -31,18 +32,18 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Divider />
+      <Gallery />
       <Mint />
       <Divider />
       <TextContainer
         title={'Roadmap & Perks'}
         paragraph={
           <p>
-            1) Every 100 adoptions, we will donate 1 ETH to animal shelters & giveaway 1 ETH to the community - Ghost Cat holders
+            🐾 Every 100 adoptions, we will donate 1 ETH to animal shelters & giveaway 1 ETH to the community - Ghost Cat holders
             are prioritised. <br /> <br />
-            2) Every 1,000, this is increased to 3ETH donated & given back for a total of 12 ETH per 1,000 adoptions! <br />{' '}
-            <br />
-            3) Games & Competitions will be held on{' '}
+            🐾 Every 1,000, this is increased to 3ETH donated & given back for a total of 24 ETH per 1,000 adoptions or{' '}
+            <b>240 ETH</b> overall! <br /> <br />
+            🐾 Games & Competitions will be held on{' '}
             <a href="https://discord.com/invite/BtvMy8AjU7" target="_blank" rel="noreferrer">
               Discord
             </a>{' '}
@@ -51,7 +52,7 @@ const About = () => {
               Twitter
             </a>{' '}
             with either $$$ or Ghost Cats as prizes, so stay tuned. <br /> <br />
-            4) Ultimately you'll be able to look after your adopted Ghost Cats - feed, groom, explore, etc. with them in a
+            🐾 Ultimately you'll be able to look after your adopted Ghost Cats - feed, groom, explore, etc. with them in a
             multiplayer world. After the art project is released we will begin working on this ASAP!
           </p>
         }
