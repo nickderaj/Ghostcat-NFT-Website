@@ -6,6 +6,8 @@ import '../styles/Landing.css';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import Community from '../components/Community';
+import Team from '../components/Team';
+import Divider from '../components/Divider';
 
 const Landing = () => {
   return (
@@ -37,6 +39,8 @@ const Landing = () => {
         </div>
       </div>
       <Community />
+      <Divider />
+      <Team />
     </div>
   );
 };
