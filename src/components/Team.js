@@ -18,7 +18,7 @@ const Team = () => {
           <img src={nick} alt="Nick" className="team-image" />
           <div className="team-para">
             <h4>Nick</h4>
-            <p>Wrote some code once, probably taking a nap</p>
+            <p>Wrote the code - probably taking a nap right now</p>
           </div>
         </div>
         <div className="team-item">
