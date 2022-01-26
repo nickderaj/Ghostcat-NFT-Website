@@ -28,7 +28,7 @@ const About = () => {
             <span>10,000</span> unique Cats living on the Ethereum Blockchain.
             <br />
             <br />
-            <span>20%</span> of sales will be donated to shelter animals & given back to the community.
+            <span>40%</span> of sales will be donated to shelter animals & given back to the community.
           </p>
         </div>
       </div>
