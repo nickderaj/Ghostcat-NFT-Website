@@ -8,6 +8,8 @@ import img_5 from '../images/gallery/5.png';
 import img_6 from '../images/gallery/6.png';
 import img_7 from '../images/gallery/7.png';
 import img_8 from '../images/gallery/8.png';
+import img_9 from '../images/gallery/9.png';
+import img_10 from '../images/gallery/10.png';
 
 const Gallery = () => {
   return (
@@ -20,6 +22,8 @@ const Gallery = () => {
       <img className="gallery-item" src={img_6} alt={'Cat Preview'} />
       <img className="gallery-item" src={img_7} alt={'Cat Preview'} />
       <img className="gallery-item" src={img_8} alt={'Cat Preview'} />
+      <img className="gallery-item" src={img_9} alt={'Cat Preview'} />
+      <img className="gallery-item" src={img_10} alt={'Cat Preview'} />
     </div>
   );
 };
