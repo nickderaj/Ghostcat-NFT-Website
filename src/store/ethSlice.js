@@ -24,13 +24,13 @@ export const connectWalletHandler = () => {
   return async (dispatch) => {
     if (window.ethereum && window.ethereum.isMetaMask) {
       try {
-        const accountInfo = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        dispatch(setAccount(accountInfo[0]));
+        const req = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        dispatch(setAccount(req[0]));
         dispatch(setBalance('Loading...'));
 
         const balanceReq = await window.ethereum.request({
           method: 'eth_getBalance',
-          params: [accountInfo[0], 'latest'],
+          params: [req[0], 'latest'],
         });
         const balance = +ethers.utils.formatEther(balanceReq);
         dispatch(setBalance(balance.toFixed(3)));

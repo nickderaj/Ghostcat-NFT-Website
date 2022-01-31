@@ -43,6 +43,8 @@ const About = () => {
             are prioritised. <br /> <br />
             🐾 Every 1,000, this is increased to 3ETH donated & given back for a total of 24 ETH per 1,000 adoptions or{' '}
             <b>240 ETH</b> overall! <br /> <br />
+            🐾 The longer you hold your Ghost Cat, the higher your chance of winning as you will be entered into more giveaways
+            <br /> <br />
             🐾 Games & Competitions will be held on{' '}
             <a href="https://discord.com/invite/BtvMy8AjU7" target="_blank" rel="noreferrer">
               Discord
@@ -53,7 +55,12 @@ const About = () => {
             </a>{' '}
             with either $$$ or Ghost Cats as prizes, so stay tuned. <br /> <br />
             🐾 Ultimately you'll be able to look after your adopted Ghost Cats - feed, groom, explore, etc. with them in a
-            multiplayer world. After the art project is released we will begin working on this ASAP!
+            multiplayer world. After the art project is released we will begin working on this ASAP! <br /> <br />
+            <span>
+              Note: The giveaways will not necessarily happen every 100, we could do 0.2 at 20 cats sold, 0.4 at 60 cats sold and
+              the remaining 0.4 at 100 cats sold for example - but every 100 sold we will do a giveaway of 1 ETH in total (or 3
+              ETH if we hit the 1,000 mark)!
+            </span>
           </p>
         }
       />

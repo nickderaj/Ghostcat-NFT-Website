@@ -34,10 +34,6 @@
   transform: translate3d(0, -2px, 0);
 }
 
-.button:focus {
-  /* box-shadow: rgba(245, 220, 255, 1) 2px 8px 4px -6px; */
-}
-
 .button--text {
   height: 3rem;
 }
