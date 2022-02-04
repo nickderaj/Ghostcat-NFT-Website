@@ -52,7 +52,7 @@ const About = () => {
               Twitter
             </a>{' '}
             with either $$$ or Ghost Cats as prizes, so stay tuned. <br /> <br />
-            🐾 Ultimately, we see the cats in an animated series or in a multiplayer game - the deecision will be brought to the
+            🐾 Ultimately, we see the cats in an animated series or in a multiplayer game - the decision will be brought to the
             community of Ghost Cat Holders to decide! <br /> <br />
             <span>
               Note: The giveaways will not necessarily happen every 100, we could do 0.2 at 20 cats sold, 0.4 at 60 cats sold and
