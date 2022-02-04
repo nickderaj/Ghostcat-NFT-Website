@@ -10,7 +10,7 @@ const Team = () => {
       <div className="team-subheading">
         <p>
           Ghost Cat was created by two brothers with an interest in crypto, NFTs and all things floof. Come chat with us on{' '}
-          <a href="https://discord.gg/BtvMy8AjU7">Discord!</a>
+          <a href="https://discord.gg/BtvMy8AjU7">Discord</a>!
         </p>
       </div>
       <div className="team-grid">
