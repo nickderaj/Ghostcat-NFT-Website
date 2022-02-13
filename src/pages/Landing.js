@@ -31,7 +31,7 @@ const Landing = () => {
             img={gen2}
             alt="Gen 2"
             title="Gen 2"
-            body="10,000 randomly-generated unique NFTs living on the Ethereum Blockchain 
+            body="1,188 randomly-generated unique NFTs living on the Ethereum Blockchain 
             with a mission to help lost animals find a home."
             btnText="More"
             btnLink="/about"

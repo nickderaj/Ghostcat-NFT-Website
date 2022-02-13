@@ -25,7 +25,7 @@ const About = () => {
             Ghost Cat... who?
           </h1>
           <p className="about--paragraph" style={{ color: Colours.black }}>
-            <span>10,000</span> unique Cats living on the Ethereum Blockchain.
+            <span>1,188</span> unique Cats living on the Ethereum Blockchain.
             <br />
             <br />
             <span>40%</span> of sales will be donated to shelter animals & given back to the community.
@@ -41,8 +41,7 @@ const About = () => {
           <p>
             🐾 Every 100 adoptions, we will donate 1 ETH to animal shelters & giveaway 1 ETH to the community - Ghost Cat holders
             are prioritised. <br /> <br />
-            🐾 Every 1,000, this is increased to 3ETH donated & given back for a total of 24 ETH per 1,000 adoptions or{' '}
-            <b>240 ETH</b> overall! <br /> <br />
+            🐾 At 1,000, this is increased to 3ETH donated & given back for a total of 24 ETH! <br /> <br />
             🐾 Games & Competitions will be held on{' '}
             <a href="https://discord.com/invite/BtvMy8AjU7" target="_blank" rel="noreferrer">
               Discord
@@ -57,7 +56,7 @@ const About = () => {
             <span>
               Note: The giveaways will not necessarily happen every 100, we could do 0.2 at 20 cats sold, 0.4 at 60 cats sold and
               the remaining 0.4 at 100 cats sold for example - but every 100 sold we will do a giveaway of 1 ETH in total (or 3
-              ETH if we hit the 1,000 mark)!
+              ETH when we hit the 1,000 mark)!
             </span>
           </p>
         }
