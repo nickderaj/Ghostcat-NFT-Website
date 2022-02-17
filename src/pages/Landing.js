@@ -13,7 +13,9 @@ const Landing = () => {
   return (
     <div>
       <Header />
+      <div style={{ paddingBottom: '4rem' }} />
       <h1 className="landing-header">The Friendly Neighbourhood Ghost Cat</h1>
+      <div style={{ paddingBottom: '4rem' }} />
       <div className="landing-container">
         <div className="landing-card">
           <Card
@@ -38,9 +40,13 @@ const Landing = () => {
           />
         </div>
       </div>
+      <div style={{ paddingBottom: '4rem' }} />
       <Community />
+      <div style={{ paddingBottom: '4rem' }} />
       <Divider />
+      <div style={{ paddingBottom: '4rem' }} />
       <Team />
+      <div style={{ paddingBottom: '4rem' }} />
     </div>
   );
 };

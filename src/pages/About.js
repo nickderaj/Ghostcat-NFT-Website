@@ -15,7 +15,9 @@ const About = () => {
   return (
     <>
       <Header />
+      <div style={{ paddingBottom: '4rem' }} />
       <h1 className="about-header">The Friendly Neighbourhood Ghost Cat</h1>
+      <div style={{ paddingBottom: '4rem' }} />
       <div className="about-wrapper">
         <div className="grid-wrapper">
           <img src={about} alt="Ghost Cat" />
@@ -32,9 +34,31 @@ const About = () => {
           </p>
         </div>
       </div>
+      <div style={{ paddingBottom: '4rem' }} />
       <Gallery />
+      <div style={{ paddingBottom: '4rem' }} />
       <Mint />
+      <div style={{ paddingBottom: '4rem' }} />
       <Divider />
+      <div style={{ paddingBottom: '4rem' }} />
+      <ImageContainer
+        title={'Our Mission'}
+        paragraph={
+          <p>
+            We will mostly be donating to local shelters in Malaysia, with our first choice being{' '}
+            <a href="https://mypetshaven.org/" target="_blank" rel="noreferrer">
+              My Pets Haven
+            </a>{' '}
+            as they really care for the animals, even take them to the beach! <br /> <br /> With more sales, we'll be able to
+            reach out to others in need all around the world.
+          </p>
+        }
+        img={adoptCat}
+        alt={'Adopt me'}
+      />
+      <div style={{ paddingBottom: '4rem' }} />
+      <Divider />
+      <div style={{ paddingBottom: '4rem' }} />
       <TextContainer
         title={'Roadmap & Perks'}
         paragraph={
@@ -61,22 +85,7 @@ const About = () => {
           </p>
         }
       />
-      <Divider />
-      <ImageContainer
-        title={'Our Mission'}
-        paragraph={
-          <p>
-            We will mostly be donating to local shelters in Malaysia, with our first choice being{' '}
-            <a href="https://mypetshaven.org/" target="_blank" rel="noreferrer">
-              My Pets Haven
-            </a>{' '}
-            as they really care for the animals, even take them to the beach! <br /> <br /> With more sales, we'll be able to
-            reach out to others in need all around the world.
-          </p>
-        }
-        img={adoptCat}
-        alt={'Adopt me'}
-      />
+      <div style={{ paddingBottom: '4rem' }} />
     </>
   );
 };
