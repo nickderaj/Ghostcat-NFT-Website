@@ -23,7 +23,7 @@ const Header = () => {
             <ButtonExt location="https://discord.gg/BtvMy8AjU7" image={discord} alt={'Discord'} />
           </div>
           <div className="header--nav-items">
-            <ButtonExt location="https://twitter.com/GhostCatNFT" image={insta} alt={'Instagram'} />
+            <ButtonExt location="https://www.instagram.com/ghostcatnft/" image={insta} alt={'Instagram'} />
           </div>
           <div className="header--nav-items">
             <ButtonExt location="https://www.youtube.com/channel/UCpj7jclU-qiixhX_Evt04Xw" image={youtube} alt={'Youtube'} />
