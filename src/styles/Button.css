@@ -34,6 +34,10 @@
   transform: translate3d(0, -2px, 0);
 }
 
+.button-disabled {
+  color: #c9c9c9;
+}
+
 .button--text {
   height: 3rem;
 }

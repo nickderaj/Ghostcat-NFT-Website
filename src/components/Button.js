@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Button.css';
 import { useNavigate } from 'react-router-dom';
 
-const Button = ({ location, text, image, alt, btnFunction }) => {
+const Button = ({ location, text, image, alt, btnFunction, disabled }) => {
   const navigate = useNavigate();
   const btnHandler = () => {
     if (location) navigate(location, { replace: true });
@@ -10,7 +10,7 @@ const Button = ({ location, text, image, alt, btnFunction }) => {
   };
 
   return (
-    <button className="button" onClick={btnHandler}>
+    <button className={`button ${disabled ? 'button-disabled' : ''}`} onClick={btnHandler} disabled={disabled}>
       {text}
       {image && <img className="button--img" src={image} alt={alt} />}
     </button>
